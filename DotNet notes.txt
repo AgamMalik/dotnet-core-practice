@@ -1,0 +1,12 @@
+> all the public methods of a controller class are called actions.
+	-we define a route for each action using attribute routing [Route(here definr route pattern)]...eg [Route("Home")]
+		-it is coming from Microsoft.AspNetCore.Mvc namespace
+
+> add services before calling build method....(builder.Service.xyzService)...(builder.Service.AddTransient<ControllerNAme>)
+	-a service is basically a reusable class to perform certain tasks which can be reused in applicatons without having direct relationship with the UI.
+	-controllers are also treated as services.
+	-we also need to import the namespace of the controller in main class.
+
+	-and a shortcut or better way of doing all this is using AddControllers() method......
+	-builder.Service.AddController().
+	-.net will automatically add all the controllers in main file (by detecting Controller suffix in controller name.)
