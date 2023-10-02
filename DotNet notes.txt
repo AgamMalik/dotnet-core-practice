@@ -10,3 +10,21 @@
 	-and a shortcut or better way of doing all this is using AddControllers() method......
 	-builder.Service.AddController().
 	-.net will automatically add all the controllers in main file (by detecting Controller suffix in controller name.)
+	-use MapControllers() function in endpoint..it will automnatically map all the endpoints
+		-endpoint.MapControllers()
+	- we can even simply just use app.MapControllers()...it will do the same...with userouting and endpoint type work.
+
+
+
+.......... dowloading files..........................
+> virtualFileResult ---> for files present in webroot directory(wwwroot) only.
+
+> physicalFileResult  ---> if the file is present outside project
+
+> FileContentResult  ----> if we have the file conetnt as bytearray byte[]
+
+
+
+
+
+> RedirectToAction  ---> to redirect from a url to another url (old url to new url)
